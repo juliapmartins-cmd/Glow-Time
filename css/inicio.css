@@ -1,0 +1,200 @@
+/* ==========================================
+   RESET & VARIÁVEIS DE DESIGN
+   ========================================== */
+:root {
+    --cor-topo: #C39A67; /* Tom Bronze/Dourado do topo */
+    --cor-texto: #333333;
+    --cor-rodape-bg: #EBEBEB;
+    --fonte-serif: 'Playfair Display', Georgia, serif;
+    --fonte-sans: 'Plus Jakarta Sans', sans-serif;
+}
+ 
+body {
+    font-family: var(--fonte-sans);
+    background-color: #FFFFFF;
+    color: var(--cor-texto);
+    min-height: 100vh;
+}
+ 
+/* ==========================================
+   HEADER / NAVBAR
+   ========================================== */
+.header-topo {
+    background-color: var(--cor-topo);
+    height: 70px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+ 
+.logo-centro{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    z-index: 10;
+}
+ 
+.logo-header{
+    height: 52px;
+    width: auto;
+    display: block;
+}
+ 
+.link-nav {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+ 
+.link-nav:hover {
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+ 
+.logo-header {
+    height: 47px;
+    width: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
+ 
+.small-text {
+    font-size: 0.65rem;
+    margin-top: 2px;
+    display: block;
+}
+ 
+/* ==========================================
+   HERO BANNER
+   ========================================== */
+.hero-banner {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+ 
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+ 
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+}
+ 
+.hero-title {
+    font-family: var(--fonte-serif);
+    font-size: 2.2rem;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+}
+ 
+/* ==========================================
+   CARDS DE CATEGORIAS (SERVIÇOS)
+   ========================================== */
+.card-categoria {
+    position: relative;
+    height: 480px; /* AUMENTADO PARA DEIXAR OS CARDS MAIS COMPRIDOS NO DESKTOP */
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+.card-categoria:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+ 
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+ 
+.card-categoria:hover .card-img {
+    transform: scale(1.05);
+}
+ 
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Gradiente suave na parte inferior para destacar o texto */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.65) 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 28px;
+}
+ 
+.card-titulo {
+    font-family: var(--fonte-serif);
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+ 
+/* ==========================================
+   RODAPÉ
+   ========================================== */
+.rodape {
+    background-color: var(--cor-rodape-bg);
+    border-top: 1px solid #DCDCDC;
+    font-size: 0.85rem;
+}
+ 
+.rodape-label {
+    color: #555555;
+}
+ 
+.rodape-link {
+    color: #000000;
+    text-decoration: underline;
+    font-weight: 500;
+}
+ 
+.rodape-link:hover {
+    color: var(--cor-topo);
+}
+ 
+/* ==========================================
+   AJUSTES RESPONSIVOS (MOBILE & TABLET)
+   ========================================== */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 10px !important;
+    }
+    
+    .link-nav {
+        font-size: 0.8rem;
+    }
+ 
+    .hero-banner {
+        height: 180px;
+    }
+ 
+    .hero-title {
+        font-size: 1.35rem;
+    }
+ 
+    .card-categoria {
+        height: 380px; /* Ajuste proporcional para telas menores */
+    }
+}
+ 

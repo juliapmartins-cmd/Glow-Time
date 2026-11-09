@@ -1,0 +1,114 @@
+/* Configurações Gerais da Página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Um fundo levemente cinza para destacar o quadrado branco */
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho Superior Premium */
+.custom-header {
+    background-color: #c49a6c; 
+    height: 70px;
+    color: white;
+}
+
+.back-arrow {
+    color: #ffffff;
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-family: monospace;
+    line-height: 1;
+}
+
+.header-logo {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.header-title {
+    /* Efeito de texto vazado com contorno branco igual à imagem */
+    color: transparent;
+    -webkit-text-stroke: 1.5px white;
+    letter-spacing: 1px;
+    font-family: 'Georgia', serif;  
+    font-size: 2rem;
+    font-weight: 400;
+   
+}
+
+.header-spacer {
+    width: 75px; 
+}
+
+/* Alinhamento do Bloco de Cadastro */
+.cadastro-container {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+
+/* O Quadrado de Fundo do Formulário */
+.cadastro-box {
+    background-color: #ffffff; /* Fundo interno branco */
+    border: 1px solid #e2e8f0; /* Borda bem sutil */
+    border-radius: 16px;       /* Cantos arredondados elegantes */
+    padding: 2.5rem 2rem;      /* Espaçamento interno */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Sombra suave para dar profundidade */
+    margin-top: 90px;
+}
+
+.cadastro-title {
+    font-family: 'Nunito', sans-serif; /* A mágica acontece aqui */
+    font-size: 2.3rem;
+    color: #1a1a1a;
+    font-weight: 800; /* Use 700 ou 800 para ficar bem encorpado igual ao seu protótipo */
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+}
+
+/* Elementos do Formulário */
+.custom-label {
+    color: #212529;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.custom-input {
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 1rem;
+}
+
+.custom-input::placeholder {
+    color: #888888;
+}
+
+/* Botão azul */
+.btn-submit {
+    background-color: #1552a3; 
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #0f3d7a;
+    color: #ffffff;
+}

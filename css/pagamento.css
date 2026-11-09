@@ -1,0 +1,193 @@
+/* ==========================================
+   VARIÁVEIS DE DESIGN DESKTOP
+   ========================================== */
+:root {
+    --gold-primary: #C39A67;
+    --gold-dark: #A37945;
+    --gold-soft: #F9F5EF;
+    --bg-desktop: #F4F5F7;
+    --text-main: #2D3748;
+    --text-muted: #718096;
+    --border-color: #E2E8F0;
+    --font-main: 'Plus Jakarta Sans', sans-serif;
+}
+ 
+body.desktop-bg {
+    font-family: var(--font-main);
+    background-color: var(--bg-desktop);
+    color: var(--text-main);
+    min-height: 100vh;
+}
+ 
+.extra-small {
+    font-size: 0.75rem;
+}
+ 
+.bg-gold {
+    background-color: var(--gold-primary) !important;
+}
+ 
+.text-gold {
+    color: var(--gold-primary) !important;
+}
+ 
+.btn-gold {
+    background-color: var(--gold-primary);
+    color: #FFFFFF;
+    border: none;
+    transition: all 0.2s ease;
+}
+ 
+.btn-gold:hover {
+    background-color: var(--gold-dark);
+    color: #FFFFFF;
+}
+ 
+/* ==========================================
+   HEADER
+   ========================================== */
+.header-topo {
+    background-color: var(--gold-primary);
+    height: 64px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+ 
+.logo-header {
+    height: 47px;
+    width: auto;
+}
+ 
+/* ==========================================
+   STEPPER DESKTOP
+   ========================================== */
+.stepper-desktop {
+    border: 1px solid var(--border-color);
+}
+ 
+.stepper-line {
+    position: absolute;
+    top: 18px;
+    left: 8%;
+    right: 8%;
+    height: 2px;
+    background-color: var(--border-color);
+    z-index: 1;
+}
+ 
+.step-item {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #FFFFFF;
+    padding: 0 10px;
+}
+ 
+.step-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border: 2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+ 
+.step-item.completed .step-icon {
+    background-color: var(--gold-soft);
+    border-color: var(--gold-primary);
+    color: var(--gold-primary);
+}
+ 
+.step-item.active .step-icon {
+    background-color: var(--gold-primary);
+    border-color: var(--gold-primary);
+    color: #FFFFFF;
+}
+ 
+.step-text {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+ 
+.step-item.active .step-text {
+    color: var(--text-main);
+    font-weight: 700;
+}
+ 
+/* ==========================================
+   CARDS DE OPÇÕES DE PAGAMENTO
+   ========================================== */
+.payment-option-card {
+    border: 2px solid var(--border-color);
+    border-radius: 14px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    transition: all 0.2s ease;
+}
+ 
+.payment-option-card:hover {
+    transform: translateY(-2px);
+}
+ 
+.payment-option-card.active {
+    border: 2px solid var(--border-color);
+    background-color: #FFFFFF;
+    box-shadow: none;
+}
+ 
+.pay-icon {
+    font-size: 1.4rem;
+    color: var(--gold-primary);
+}
+ 
+.payment-option-card .form-check-input {
+    accent-color: var(--gold-primary);
+}
+ 
+/* ==========================================
+   BOX PIX (RETORNADA A COR DE FUNDO SUAVE)
+   ========================================== */
+.pix-box {
+    background-color: var(--gold-soft);
+    border: 1px dashed var(--gold-primary);
+}
+ 
+/* ==========================================
+   SIDEBAR STICKY (RESUMO NO DESKTOP)
+   ========================================== */
+@media (min-width: 992px) {
+    .sticky-sidebar {
+        position: sticky;
+        top: 84px;
+    }
+}
+ 
+.summary-card {
+    border-color: var(--border-color);
+}
+ 
+.total-box {
+    background-color: var(--gold-soft);
+    border: 1px solid rgba(195, 154, 103, 0.2);
+}
+ 
+/* ==========================================
+   RODAPÉ
+   ========================================== */
+.rodape-link {
+    color: var(--text-main);
+    text-decoration: underline;
+    font-weight: 500;
+}
+ 
+.rodape-link:hover {
+    color: var(--gold-primary);
+}
+ 

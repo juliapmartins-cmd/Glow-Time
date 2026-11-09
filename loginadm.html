@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Administrador - Glow Time</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts (Poppins para o formulário e Sancreek para a Logo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Sancreek&display=swap" rel="stylesheet">
+
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="css/loginadm.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid barra">
+            <div class="d-flex align-items-center h-100">
+                <a href="#" class="voltar">
+                    <i class="bi bi-chevron-left"></i>
+                </a>
+                <img src="imagem/imagem.png" alt="Logo Glow Time" class="logo">
+                <span class="brand-title">Glow time</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="login">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-7 col-12">
+                    
+                    <!-- Quadrado / Card Central -->
+                    <div class="card-login">
+                        
+                        <h1 class="titulo-login">LOGIN ADMINISTRADOR</h1>
+
+                        <form class="form-login">
+                            <div class="campo mb-3">
+                                <label for="cpf" class="form-label">CPF:</label>
+                                <input type="text" id="cpf" class="form-control custom-input" placeholder="Digite seu CPF">
+                            </div>
+
+                            <div class="campo mb-2">
+                                <label for="senha" class="form-label">Senha:</label>
+                                <input type="password" id="senha" class="form-control custom-input" placeholder="Digite sua senha">
+                            </div>
+
+                            <div class="esqueceu text-end mb-4">
+                                <a href="recuperarSenha.html">Esqueceu a senha?</a>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-enviar w-100">Enviar</button>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

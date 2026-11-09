@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Time - Painel Financeiro Moderno</title>
+ 
+    <!-- Fontes do Google (Playfair Display para títulos luxuosos + Plus Jakarta Sans para UI moderna) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+ 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+ 
+    <link rel="stylesheet" href="css/conta_bancaria.css">
+</head>
+<body>
+ 
+    <!-- ================= TOPO / HEADER ================= -->
+    <header class="header-topo">
+        <div class="header-container">
+            <div class="logo-box">
+                <!-- Substitua pelo caminho da sua logo -->
+                <img src="imagem/imagem.png" alt="Logo Glow Time" class="logo-img">
+            </div>
+            
+            <button class="btn-chatbot" title="Abrir Assistente">
+                <i class="bi bi-robot"></i>
+                <span>Chatbot</span>
+            </button>
+        </div>
+    </header>
+ 
+    <!-- ================= CONTEÚDO PRINCIPAL ================= -->
+    <main class="conteudo-principal">
+        <div class="dashboard-grid">
+ 
+            <!-- TOPO: PERFIL DO ADMINISTRADOR -->
+            <section class="card-admin">
+                <div class="foto-admin-wrapper">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300" alt="Helena Moraes" class="foto-admin">
+                    <span class="status-online" title="Online"></span>
+                </div>
+                <div class="info-admin">
+                    <span class="cargo-badge">ADMINISTRADORA</span>
+                    <h2 class="nome-admin">Helena Moraes</h2>
+                </div>
+            </section>
+ 
+            <!-- SEÇÃO DE SALDO E RESUMO FINANCEIRO (KPIs) -->
+            <section class="secao-kpis">
+                <div class="secao-header">
+                    <h3 class="titulo-secao">CONTA BANCÁRIA</h3>
+                    <div class="linha-divisora"></div>
+                </div>
+ 
+                <div class="grid-cards-financeiros">
+                    <!-- SALDO PRINCIPAL -->
+                    <div class="card-kpi card-saldo-destaque">
+                        <div class="kpi-icon">
+                            <i class="bi bi-wallet2"></i>
+                        </div>
+                        <div class="kpi-conteudo">
+                            <span class="kpi-label">Saldo Atual</span>
+                            <h2 class="kpi-valor">R$ 8.450,00</h2>
+                        </div>
+                    </div>
+ 
+                    <!-- ENTRADAS -->
+                    <div class="card-kpi card-entrada">
+                        <div class="kpi-icon bg-sucesso-suave">
+                            <i class="bi bi-arrow-up-right-circle"></i>
+                        </div>
+                        <div class="kpi-conteudo">
+                            <span class="kpi-label">Entradas</span>
+                            <h3 class="kpi-valor text-sucesso">R$ 12.300,00</h3>
+                        </div>
+                    </div>
+ 
+                    <!-- SAÍDAS -->
+                    <div class="card-kpi card-saida">
+                        <div class="kpi-icon bg-perigo-suave">
+                            <i class="bi bi-arrow-down-left-circle"></i>
+                        </div>
+                        <div class="kpi-conteudo">
+                            <span class="kpi-label">Saídas</span>
+                            <h3 class="kpi-valor text-perigo">R$ 3.850,00</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+ 
+            <!-- SEÇÃO DE MOVIMENTAÇÕES / EXTRATO -->
+            <section class="secao-extrato">
+                <div class="secao-header">
+                    <h3 class="titulo-secao">MOVIMENTAÇÕES</h3>
+                    <div class="linha-divisora"></div>
+                </div>
+ 
+                <div class="card-tabela-wrapper">
+                    <table class="tabela-movimentacoes">
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Serviço</th>
+                                <th class="text-right">Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-data"><i class="bi bi-calendar-event me-2"></i>05/06</td>
+                                <td class="col-servico">Alongamento Gel</td>
+                                <td class="col-valor text-right">
+                                    <span class="badge-valor badge-entrada">+R$ 120,00</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-data"><i class="bi bi-calendar-event me-2"></i>05/06</td>
+                                <td class="col-servico">Massagem Relaxante</td>
+                                <td class="col-valor text-right">
+                                    <span class="badge-valor badge-entrada">+R$ 180,00</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-data"><i class="bi bi-calendar-event me-2"></i>04/06</td>
+                                <td class="col-servico">Compra de Produtos</td>
+                                <td class="col-valor text-right">
+                                    <span class="badge-valor badge-saida">-R$ 250,00</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-data"><i class="bi bi-calendar-event me-2"></i>03/06</td>
+                                <td class="col-servico">Maquiagem</td>
+                                <td class="col-valor text-right">
+                                    <span class="badge-valor badge-entrada">+R$ 150,00</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+ 
+                <!-- AÇÃO VOLTAR -->
+                <div class="area-acoes">
+                    <button class="btn-voltar-moderno">
+                        <i class="bi bi-arrow-left"></i>
+                        <span>VOLTAR</span>
+                    </button>
+                </div>
+            </section>
+ 
+        </div>
+    </main>
+ 
+    <!-- ================= RODAPÉ ================= -->
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="item-rodape">
+                <span class="label-rodape">Redes Sociais:</span>
+                <a href="#" class="link-rodape">Instagram</a>
+            </div>
+            <div class="item-rodape">
+                <span class="label-rodape">Contato:</span>
+                <a href="tel:11948179090" class="link-rodape">(11) 94817-9090</a>
+            </div>
+            <div class="item-rodape">
+                <span class="label-rodape">Email:</span>
+                <a href="mailto:glow.time@gmail.com" class="link-rodape">glow.time@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+ 
+</body>
+</html>
+ 
+ 
+ 
+ 

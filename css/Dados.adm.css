@@ -1,0 +1,307 @@
+/*=========================
+RESET E ESTRUTURA TELA INTEIRA (FULLSCREEN)
+==========================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html, body {
+    height: 100%;
+    width: 100%;
+}
+ 
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+ 
+main {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+ 
+/*=========================
+HEADER / NAVBAR
+==========================*/
+.header-topo {
+    background-color: #C29B63;
+    height: 60px;
+    flex-shrink: 0;
+    width: 100%;
+}
+ 
+.logo-header {
+    height: 47px;
+    width: auto;
+}
+ 
+/*=========================
+CARDS DE PAINEL (BEIGE CONTAINER)
+==========================*/
+.card-painel {
+    background-color: #FAF4EB;
+    border: 2px solid #A67C48;
+    border-radius: 20px;
+    padding: 24px;
+    width: 100%;
+}
+ 
+/*=========================
+SIDEBAR (PERFIL DO ADM EXPANDIDO)
+==========================*/
+.titulo-sidebar {
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: #2b201c;
+}
+ 
+.foto-adm-container {
+    width: 105px;
+    height: 105px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #C29B63;
+}
+ 
+.foto-adm {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+.nome-adm {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000000;
+}
+ 
+.cargo-adm {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+ 
+.info-contato {
+    font-size: 0.85rem;
+}
+ 
+/* Detalhes extras do ADM */
+.info-detalhes-adm {
+    font-size: 0.85rem;
+}
+ 
+.label-detalhe {
+    color: #666666;
+    font-weight: 500;
+}
+ 
+.valor-detalhe {
+    color: #000000;
+    font-weight: bold;
+}
+ 
+.linha-divisora {
+    border-top: 1px solid #A67C48;
+    opacity: 0.3;
+    margin: 12px 0;
+}
+ 
+.titulo-sub {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #2b201c;
+}
+ 
+.estrelas {
+    color: #FFC107;
+    font-size: 1.05rem;
+    letter-spacing: 2px;
+}
+ 
+/* Botão Financeiro */
+.btn-financeiro {
+    background-color: #C29B63;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.95rem;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+ 
+.btn-financeiro:hover {
+    background-color: #A67C48;
+    color: #ffffff;
+}
+ 
+/*=========================
+CARDS DE MÉTRICAS (KPIs)
+==========================*/
+.card-metrica {
+    background-color: #FAF4EB;
+    border: 1.5px solid #A67C48;
+    border-radius: 16px;
+    padding: 16px 18px;
+    height: 100%;
+}
+ 
+.metrica-label {
+    font-size: 0.8rem;
+    color: #666666;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+ 
+.metrica-valor {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: 0;
+    color: #000000;
+}
+ 
+.metrica-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+ 
+/* Cores dos Ícones e Métricas */
+.bg-gold-light { background-color: #EFE3D3; color: #A67C48; }
+.bg-success-light { background-color: #D1E7DD; color: #0F5132; }
+.bg-warning-light { background-color: #FFF3CD; color: #664D03; }
+.bg-danger-light { background-color: #F8D7DA; color: #842029; }
+ 
+.text-success-custom { color: #0F5132; }
+.text-warning-custom { color: #856404; }
+.text-danger-custom { color: #842029; }
+ 
+/*=========================
+TABELA DE AGENDAMENTOS (EXPANDIDA)
+==========================*/
+.titulo-agendamento {
+    font-size: 1.35rem;
+    font-weight: bold;
+    color: #2b201c;
+}
+ 
+.icon-calendario {
+    color: #A67C48;
+}
+ 
+.bg-gold {
+    background-color: #C29B63 !important;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: normal;
+}
+ 
+/* Container ajustado para ocupar 100% da altura restante sem rolar */
+.tabela-container-expandida {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.tabela-custom {
+    border: 1.5px solid #A67C48;
+    background-color: #FAF4EB;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+ 
+.tabela-custom thead th {
+    background-color: #EFE3D3;
+    color: #2b201c;
+    border-bottom: 2px solid #A67C48;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+}
+ 
+.tabela-custom tbody td {
+    border-bottom: 1px solid #e2d7c7;
+    border-right: 1px solid #e2d7c7;
+    text-align: center;
+    padding: 12px;
+    background-color: transparent;
+}
+ 
+.tabela-custom tbody tr:last-child td {
+    border-bottom: none;
+}
+ 
+/* Badges da Tabela */
+.badge-status {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: inline-block;
+}
+ 
+.status-pago {
+    background-color: #D1E7DD;
+    color: #0F5132;
+    border: 1px solid #BADBCE;
+}
+ 
+.status-pendente {
+    background-color: #FFF3CD;
+    color: #664D03;
+    border: 1px solid #FFECB5;
+}
+ 
+.status-confirmado {
+    background-color: #CCE5FF;
+    color: #004085;
+    border: 1px solid #B8DAFF;
+}
+ 
+.status-cancelado {
+    background-color: #F8D7DA;
+    color: #842029;
+    border: 1px solid #F5C2C7;
+}
+ 
+/*=========================
+RODAPÉ FIXO NO FINAL
+==========================*/
+.rodape {
+    background-color: #EBEBEB;
+    padding: 16px 0;
+    border-top: 1px solid #dcdcdc;
+    margin-top: auto;
+    flex-shrink: 0;
+    width: 100%;
+}
+ 
+.rodape-label {
+    font-size: 0.85rem;
+    color: #555555;
+}
+ 
+.rodape-link {
+    font-size: 0.85rem;
+    color: #000000;
+    text-decoration: underline;
+    font-weight: 500;
+}
+ 
+.rodape-link:hover {
+    color: #A67C48;
+}
+ 

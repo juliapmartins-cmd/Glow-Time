@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Time - Painel do Administrador</title>
+ 
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+ 
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/Dados.adm.css">
+</head>
+<body class="d-flex flex-column vh-100">
+ 
+    <!-- ================= TOPO / HEADER ================= -->
+    <header class="header-topo shadow-sm position-relative">
+        <div class="container-fluid px-4 d-flex justify-content-end align-items-center h-100">
+            
+            <!-- LOGO CENTRALIZADA NA TELA -->
+            <div class="logo-container position-absolute start-50 translate-middle-x">
+                <img src="imagem/imagem.png" alt="Logo Glow Time" class="logo-header">
+            </div>
+ 
+            <!-- PERFIL DO USUÁRIO (DIREITA) -->
+            <div class="user-badge d-flex align-items-center gap-2">
+                <i class="bi bi-person-circle fs-5 text-white"></i>
+                <span class="text-white fw-bold">Helena Moraes</span>
+            </div>
+ 
+        </div>
+    </header>
+ 
+    <!-- ================= CONTEÚDO PRINCIPAL (TELA INTEIRA) ================= -->
+    <main class="container-fluid px-4 py-3 flex-grow-1 d-flex flex-column">
+        <div class="row g-3 flex-grow-1">
+            
+            <!-- COLUNA ESQUERDA: PERFIL E DADOS DETALHADOS DA ADM -->
+            <aside class="col-lg-3 col-md-4 d-flex flex-column">
+                <div class="card-painel text-center flex-grow-1 d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h2 class="titulo-sidebar m-0">Dados do Administrador</h2>
+                            <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill"><i class="bi bi-circle-fill me-1 small"></i>Online</span>
+                        </div>
+                        
+                        <div class="foto-adm-container shadow-sm mb-3">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300" alt="Helena Moraes" class="foto-adm">
+                        </div>
+ 
+                        <h3 class="nome-adm mb-1">Helena Moraes</h3>
+                        <p class="cargo-adm text-muted mb-2">Gerente de Operações</p>
+                        
+                        <p class="info-contato text-muted mb-1"><i class="bi bi-telephone me-1"></i>11 87639-1394</p>
+                        <p class="info-contato text-muted mb-0"><i class="bi bi-envelope me-1"></i>helenamoraes2@gmail.com</p>
+ 
+                        <hr class="linha-divisora">
+ 
+                        <!-- INFORMAÇÕES COMPLEMENTARES DO ADM -->
+                        <div class="text-start px-2 info-detalhes-adm">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="label-detalhe"><i class="bi bi-building me-1"></i>Unidade:</span>
+                                <span class="valor-detalhe">Jardins - SP</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="label-detalhe"><i class="bi bi-person-badge me-1"></i>ID Registro:</span>
+                                <span class="valor-detalhe">#ADM-8942</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="label-detalhe"><i class="bi bi-clock-history me-1"></i>Turno:</span>
+                                <span class="valor-detalhe">08:00 - 18:00</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="label-detalhe"><i class="bi bi-shield-check me-1"></i>Último Acesso:</span>
+                                <span class="valor-detalhe">Hoje, 08:15</span>
+                            </div>
+                        </div>
+ 
+                        <hr class="linha-divisora">
+ 
+                        <div class="avaliacao-container my-2">
+                            <p class="titulo-sub mb-1">Avaliação do Site</p>
+                            <div class="estrelas">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="mt-2">
+                        <button class="btn btn-financeiro w-100 shadow-sm">
+                            <i class="bi bi-cash-stack me-2"></i>FINANCEIRO
+                        </button>
+                    </div>
+                </div>
+            </aside>
+ 
+            <!-- COLUNA DIREITA: DASHBOARD E TABELA DE AGENDAMENTOS EXPANDIDA -->
+            <section class="col-lg-9 col-md-8 d-flex flex-column">
+                
+                <!-- CARDS DE MÉTRICAS / RESUMO (KPIs) -->
+                <div class="row g-3 mb-3">
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="card-metrica">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="metrica-label">Total Hoje</span>
+                                    <h3 class="metrica-valor">12</h3>
+                                </div>
+                                <div class="metrica-icon bg-gold-light"><i class="bi bi-calendar-check"></i></div>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="card-metrica">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="metrica-label">Confirmados</span>
+                                    <h3 class="metrica-valor text-success-custom">9</h3>
+                                </div>
+                                <div class="metrica-icon bg-success-light"><i class="bi bi-check-circle"></i></div>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="card-metrica">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="metrica-label">Pendentes</span>
+                                    <h3 class="metrica-valor text-warning-custom">2</h3>
+                                </div>
+                                <div class="metrica-icon bg-warning-light"><i class="bi bi-clock-history"></i></div>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="card-metrica">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="metrica-label">Cancelados</span>
+                                    <h3 class="metrica-valor text-danger-custom">1</h3>
+                                </div>
+                                <div class="metrica-icon bg-danger-light"><i class="bi bi-x-circle"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+                <!-- PAINEL DE AGENDAMENTOS DE HOJE (EXPANDIDO VERTICALMENTE) -->
+                <div class="card-painel flex-grow-1 d-flex flex-column justify-content-start">
+                    <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="bi bi-calendar3 icon-calendario fs-3"></i>
+                            <h1 class="titulo-agendamento m-0">Agendamentos de Hoje</h1>
+                        </div>
+                        <span class="badge bg-gold px-3 py-2">Hoje</span>
+                    </div>
+ 
+                    <!-- CONTAINER DA TABELA PREENCHENDO TODO O ESPAÇO DISPONÍVEL -->
+                    <div class="table-responsive flex-grow-1 tabela-container-expandida">
+                        <table class="table tabela-custom align-middle">
+                            <thead>
+                                <tr>
+                                    <th>Cliente</th>
+                                    <th>Serviço</th>
+                                    <th>Horário</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="fw-bold">Maria Silva</td>
+                                    <td>Limpeza de Pele</td>
+                                    <td><i class="bi bi-clock me-1 opacity-75"></i>09:00</td>
+                                    <td><span class="badge-status status-pago">Pago</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">João Santos</td>
+                                    <td>Lash Lifting</td>
+                                    <td><i class="bi bi-clock me-1 opacity-75"></i>10:30</td>
+                                    <td><span class="badge-status status-pendente">Pendente</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Ana Oliveira</td>
+                                    <td>Massagem Relaxante</td>
+                                    <td><i class="bi bi-clock me-1 opacity-75"></i>13:00</td>
+                                    <td><span class="badge-status status-confirmado">Confirmado</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Beatriz Lima</td>
+                                    <td>Design de Sobrancelhas</td>
+                                    <td><i class="bi bi-clock me-1 opacity-75"></i>14:15</td>
+                                    <td><span class="badge-status status-confirmado">Confirmado</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Carlos Eduardo</td>
+                                    <td>Depilação a Laser</td>
+                                    <td><i class="bi bi-clock me-1 opacity-75"></i>15:30</td>
+                                    <td><span class="badge-status status-pago">Pago</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Fernanda Souza</td>
+                                    <td>Microagulhamento</td>
+                                    <td><i class="bi bi-clock me-1 opacity-75"></i>16:45</td>
+                                    <td><span class="badge-status status-pendente">Pendente</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Roberto Alves</td>
+                                    <td>Barba & Cabelo</td>
+                                    <td><i class="bi bi-clock me-1 opacity-75"></i>18:00</td>
+                                    <td><span class="badge-status status-cancelado">Cancelado</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+ 
+            </section>
+        </div>
+    </main>
+ 
+    <!-- ================= RODAPÉ ================= -->
+    <footer class="rodape">
+        <div class="container-fluid px-4">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-4 mb-2 mb-md-0">
+                    <span class="rodape-label">Redes Sociais:</span>
+                    <a href="#" class="rodape-link ms-1">Instagram</a>
+                </div>
+                <div class="col-md-4 mb-2 mb-md-0 text-md-center">
+                    <span class="rodape-label">Contato:</span>
+                    <a href="tel:11948179090" class="rodape-link ms-1">(11) 94817-9090</a>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <span class="rodape-label">Email:</span>
+                    <a href="mailto:glow.time@gmail.com" class="rodape-link ms-1">glow.time@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+ 
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+ 

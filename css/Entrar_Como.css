@@ -1,0 +1,132 @@
+/*=========================
+RESET
+==========================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html, body {
+    height: 100%;
+    background: #ffffff;
+    font-family: Georgia, serif;
+}
+ 
+/*=========================
+HEADER
+==========================*/
+.topo {
+    background: #C9A06A;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+}
+ 
+.logo {
+    display: flex;
+    align-items: center;
+}
+ 
+.logo img {
+    width: 45px;
+    margin-right: 12px;
+}
+ 
+.logo h2 {
+    font-size: 36px;
+    font-weight: normal;
+    margin: 0;
+    /* Efeito de texto vazado com contorno branco igual à imagem */
+    color: transparent;
+    -webkit-text-stroke: 1.5px white;
+    letter-spacing: 1px;
+}
+ 
+/*=========================
+CENTRALIZAÇÃO MAIN
+==========================*/
+main {
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.caixa-escolha {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+/*=========================
+TÍTULO
+==========================*/
+.caixa-escolha h1 {
+    color: #5A3412;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+ 
+/*=========================
+LOGO CENTRAL
+==========================*/
+.logo-central {
+    display: flex;
+    width: 150px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+ 
+/*=========================
+BOTÕES
+==========================*/
+.botoes-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 10px;
+}
+ 
+.botao {
+    background: #C9A06A;
+    color: white !important;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif; /* Botões na imagem não usam serifa */
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 16px;
+    transition: 0.3s;
+    width: 100%;
+    border: none;
+    letter-spacing: 1px;
+}
+ 
+.botao:hover {
+    background: #b78b52;
+}
+ 
+/*=========================
+RESPONSIVO
+==========================*/
+@media(max-width: 768px) {
+    .logo h2 {
+        font-size: 26px;
+        -webkit-text-stroke: 1px white;
+    }
+    .caixa-escolha h1 {
+        font-size: 38px;
+    }
+    .logo-central {
+        width: 90px;
+    }
+    .botao {
+        font-size: 14px;
+    }
+}
+ 

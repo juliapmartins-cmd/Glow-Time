@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Time - Maquiagem e Pacotes</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="css/maquiagem.css">
+</head>
+
+<body>
+
+    <!-- Header / Barra Superior -->
+    <header class="header-barra">
+        <div class="container-fluid d-flex align-items-center justify-content-between h-100 px-4">
+            
+            <nav class="nav-links d-flex gap-3">
+                <a href="#">Início</a>
+                <a href="#">Profissionais</a>
+                <a href="#">Sobre</a>
+            </nav>
+
+            <div class="logo-container text-center">
+                <img src="imagem/imagem.png" alt="Logo Glow Time" class="logo-img">
+            </div>
+
+            <div class="header-icons d-flex align-items-center gap-3">
+                <a href="#" class="header-icon" title="Sacola"><i class="bi bi-bag"></i></a>
+                <a href="#" class="header-icon" title="Chatbot"><i class="bi bi-robot"></i></a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal Dividido Lado a Lado -->
+    <main class="container-fluid container-principal my-5 px-lg-5">
+        <div class="row g-5">
+
+            <!-- LADO ESQUERDO: Maquiagem (Foto + Lista de Serviços com +) -->
+            <section class="col-lg-5 col-12 coluna-esquerda">
+                <h1 class="titulo-secao mb-4 text-center text-lg-start">Maquiagem</h1>
+
+                <div class="d-flex flex-column align-items-center align-items-lg-start gap-4">
+                    <img src="imagem/maquiagem.png" alt="Maquiagem Profissional" class="img-fluid img-modelo shadow">
+
+                    <div class="lista-servicos d-flex flex-column gap-3 w-100">
+                        
+                        <div class="item-servico d-flex align-items-start gap-3">
+                            <div class="icone-box">
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="nome-servico">Maquiagem Social</h3>
+                                <p class="desc-servico">Ideal para festas, eventos e ocasiões especiais.</p>
+                            </div>
+                        </div>
+
+                        <div class="item-servico d-flex align-items-start gap-3">
+                            <div class="icone-box">
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="nome-servico">Maquiagem Glow</h3>
+                                <p class="desc-servico">Pele iluminada e natural.</p>
+                            </div>
+                        </div>
+
+                        <div class="item-servico d-flex align-items-start gap-3">
+                            <div class="icone-box">
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="nome-servico">Maquiagem Glam</h3>
+                                <p class="desc-servico">Olhos marcantes e acabamento impecável.</p>
+                            </div>
+                        </div>
+
+                        <div class="item-servico d-flex align-items-start gap-3">
+                            <div class="icone-box">
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="nome-servico">Maquiagem Noiva</h3>
+                                <p class="desc-servico">Produção completa para um dos dias mais especiais.</p>
+                            </div>
+                        </div>
+
+                        <div class="item-servico d-flex align-items-start gap-3">
+                            <div class="icone-box">
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="nome-servico">Maquiagem Artística</h3>
+                                <p class="desc-servico">Criatividade e personalidade em cada detalhe.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- LADO DIREITO: Pacotes -->
+            <section class="col-lg-7 col-12 coluna-direita">
+                <h2 class="titulo-secao mb-4 text-center text-lg-start">Pacotes</h2>
+
+                <div class="row g-4">
+                    
+                    <!-- Pacote 1 -->
+                    <div class="col-md-6 col-12">
+                        <div class="card-pacote p-4 d-flex flex-column justify-content-between h-100">
+                            <div>
+                                <h3 class="subtitulo-pacote text-center">Glow Premium</h3>
+                                <h4 class="detalhe-pacote text-center my-3">Maquiagem social + preparação de pele</h4>
+                                <hr class="linha-decorativa mb-3">
+                                <p class="desc-pacote text-center">Pele impecável, olhos destacados e acabamento perfeito para sua ocasião.</p>
+                            </div>
+                            <button class="btn btn-sacola w-100 mt-4">ADICIONAR À SACOLA</button>
+                        </div>
+                    </div>
+
+                    <!-- Pacote 2 -->
+                    <div class="col-md-6 col-12">
+                        <div class="card-pacote p-4 d-flex flex-column justify-content-between h-100">
+                            <div>
+                                <h3 class="subtitulo-pacote text-center">Noiva Completa</h3>
+                                <h4 class="detalhe-pacote text-center my-3">Maquiagem Noiva + Penteado Teste</h4>
+                                <hr class="linha-decorativa mb-3">
+                                <p class="desc-pacote text-center">Cuidado exclusivo para o grande dia, com teste para mais segurança.</p>
+                            </div>
+                            <button class="btn btn-sacola w-100 mt-4">ADICIONAR À SACOLA</button>
+                        </div>
+                    </div>
+
+                    <!-- Pacote 3 -->
+                    <div class="col-md-6 col-12">
+                        <div class="card-pacote p-4 d-flex flex-column justify-content-between h-100">
+                            <div>
+                                <h3 class="subtitulo-pacote text-center">Party Look</h3>
+                                <h4 class="detalhe-pacote text-center my-3">Maquiagem Festa + Cílios Postiços</h4>
+                                <hr class="linha-decorativa mb-3">
+                                <p class="desc-pacote text-center">Destaque seu olhar e garanta um look marcante para sua noite especial.</p>
+                            </div>
+                            <button class="btn btn-sacola w-100 mt-4">ADICIONAR À SACOLA</button>
+                        </div>
+                    </div>
+
+                    <!-- Pacote 4 -->
+                    <div class="col-md-6 col-12">
+                        <div class="card-pacote p-4 d-flex flex-column justify-content-between h-100">
+                            <div>
+                                <h3 class="subtitulo-pacote text-center">Autoestima</h3>
+                                <h4 class="detalhe-pacote text-center my-3">Curso de Automake + Consultoria de Beleza</h4>
+                                <hr class="linha-decorativa mb-3">
+                                <p class="desc-pacote text-center">Aprenda, se conheça e realce sua beleza com autonomia e confiança.</p>
+                            </div>
+                            <button class="btn btn-sacola w-100 mt-4">ADICIONAR À SACOLA</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer-barra py-4 mt-5">
+        <div class="container">
+            <div class="row text-center text-md-start g-3">
+                <div class="col-md-4">
+                    <p class="footer-label mb-1">Redes Sociais:</p>
+                    <a href="#" class="footer-link">Instagram</a>
+                </div>
+                <div class="col-md-4 text-md-center">
+                    <p class="footer-label mb-1">Contato:</p>
+                    <p class="footer-info mb-0">(11) 94617-9099</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <p class="footer-label mb-1">Email:</p>
+                    <p class="footer-info mb-0">glowtime@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

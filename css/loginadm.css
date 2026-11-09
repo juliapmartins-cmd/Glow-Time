@@ -1,0 +1,140 @@
+/* =========================================
+   RESET & BASICS
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fa; /* Fundo suave para destacar o quadrado */
+    font-family: 'Poppins', sans-serif;
+    color: #1a1a1a;
+}
+
+/* =========================================
+   BARRA SUPERIOR (HEADER)
+========================================= */
+.barra {
+    background-color: #c99c68;
+    height: 60px;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+.voltar {
+    color: #ffffff;
+    font-size: 22px;
+    text-decoration: none;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+/* Fonte estilo serifada vazada/outline com traço duplo */
+.brand-title {
+    color: #ffffff;
+    font-size: 30px;
+font-family: 'Georgia', serif;
+ 
+    font-weight: 400;
+    margin-left: 12px;
+    letter-spacing: 1px;
+
+    /* Efeito de texto vazado com contorno branco igual à imagem */
+    color: transparent;
+    -webkit-text-stroke: 1.5px white;
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   ÁREA DE LOGIN E QUADRADO (CARD)
+========================================= */
+.login {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 15px;
+}
+
+/* Estilo do quadrado contêiner */
+.card-login {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 45px 35px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.titulo-login {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    color: #111111;
+    margin-bottom: 35px;
+    letter-spacing: 0.5px;
+}
+
+.form-login {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.campo label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #2b2b2b;
+    margin-bottom: 6px;
+}
+
+.custom-input {
+    height: 38px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #495057;
+    box-shadow: none !important;
+}
+
+.custom-input::placeholder {
+    color: #a0a5aa;
+    font-size: 13px;
+}
+
+.custom-input:focus {
+    border-color: #a0a0a0;
+}
+
+.esqueceu a {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.esqueceu a:hover {
+    color: #333333;
+}
+
+.btn-enviar {
+    background-color: #1d5cb0;
+    border: none;
+    border-radius: 6px;
+    height: 38px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    transition: background-color 0.2s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #174a8e;
+}
